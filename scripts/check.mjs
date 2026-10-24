@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import { readFile, access, readdir } from 'node:fs/promises';
+import { resolve } from 'node:path';
+const html = await readFile('public/index.html', 'utf8');
+const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]);
+assert.equal(new Set(ids).size, ids.length, 'Duplicate IDs');
+for (const m of html.matchAll(/\bhref="#([^"]+)"/g)) assert(ids.includes(m[1]), `Missing anchor ${m[1]}`);
+for (const m of html.matchAll(/(?:src|href|srcset)="(\/[^" ]*)"/g)) if (m[1] !== '/') await access(resolve('public', '.' + m[1]));
+assert.match(html, /<html lang="ja">/);
+assert.equal((html.match(/<h1\b/g) || []).length, 1);
+assert.equal((html.match(/fetchpriority="high"/g) || []).length, 1);
+assert(!/<script\b/i.test(html), 'Site should work without JS');
+for (const name of await readdir('public')) assert(!/secret|\.env|token|agent/i.test(name), 'Unexpected runtime file');
+console.log('PASS: asset paths, anchors, Japanese document, heading, image priority, no scripts/runtime files');

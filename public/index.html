@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#32612b">
+  <title>CraftHarbor | Minecraftサーバーの管理アプリ</title>
+  <meta name="description" content="起動、接続、バックアップ。Minecraft JavaサーバーをこのPCで管理する、Windows向けの無料・オープンソースアプリ。">
+  <meta property="og:title" content="CraftHarbor | Minecraftサーバーの管理アプリ">
+  <meta property="og:description" content="サーバーの準備も、冒険のつづきも。起動からバックアップまで、ひとつの管理画面で。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://craftharbor-site.pages.dev/assets/harbor.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/lighthouse.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+  <header class="header wrap">
+    <a class="brand" href="/" aria-label="CraftHarbor トップ"><img src="/assets/lighthouse.svg" width="32" height="40" alt=""><span>CraftHarbor</span></a>
+    <nav aria-label="メインナビゲーション"><a href="#features">機能</a><a href="#start">使い方</a><a href="https://github.com/g-kari/craftharbor">GitHub</a><a class="button button-small" href="#download">ダウンロード <span aria-hidden="true">↓</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="wood-label">Minecraft Java / Windows</p>
+        <h1 id="hero-title">サーバーの準備も、<br>冒険のつづきも。</h1>
+        <p class="intro">起動、接続、バックアップ。<br>Minecraftサーバーを管理する無料アプリ。</p>
+        <a class="button hero-download" href="https://github.com/g-kari/craftharbor/releases/download/v0.3.1-preview/setup.exe">Windows版をダウンロード <span aria-hidden="true">↓</span></a>
+        <div class="hero-links"><a href="https://github.com/g-kari/craftharbor">ソースコードを見る <span aria-hidden="true">↗</span></a><span>オープンソース・プレビュー版</span></div>
+      </div>
+      <picture class="hero-art"><source srcset="/assets/harbor.webp" type="image/webp"><img src="/assets/harbor.png" width="1672" height="941" alt="" fetchpriority="high"></picture>
+    </section>
+
+    <section id="features" class="features" aria-labelledby="features-title">
+      <div class="grass-title"><h2 id="features-title">管理画面でできること</h2><span class="grass-block block-left" aria-hidden="true"></span><span class="grass-block block-right" aria-hidden="true"></span></div>
+      <div class="wrap">
+        <figure class="app-preview"><div class="window-bar"><span class="window-dot" aria-hidden="true"></span> CraftHarbor <span>アプリ画面</span></div><img src="/assets/dashboard.png" width="1360" height="960" loading="lazy" alt="CraftHarborのダッシュボード。左に機能メニュー、右にサーバーと公開接続の操作、CPU・メモリのグラフを表示。"><figcaption>実際のアプリ画面。表示確認用のサンプル環境・合成データを使用しています。</figcaption></figure>
+        <div class="feature-list">
+          <article><div class="pixel-icon chests" aria-hidden="true"><i></i><i></i><i></i></div><h3>サーバーを分けて管理</h3><p>ワールドやMOD構成ごとに、<br class="desktop-break">プロファイルを保存。切り替えて起動できます。</p></article>
+          <article><div class="pixel-icon connection" aria-hidden="true"><i></i><b></b><i></i></div><h3>友達との接続を設定</h3><p>playit.gg・ngrok・直接接続。<br class="desktop-break">環境に合わせて公開方法を選べます。</p></article>
+          <article><div class="pixel-icon disk" aria-hidden="true"><i></i></div><h3>ログもバックアップも</h3><p>ログの絞り込み、負荷の確認、<br class="desktop-break">ワールドのバックアップと復元を管理画面から。</p></article>
+        </div>
+        <p class="note connection-note">外部サービスには別途アカウント・設定が必要です。利用条件・料金は各サービスをご確認ください。</p>
+      </div>
+    </section>
+
+    <section id="start" aria-labelledby="start-title" class="getting-started">
+      <div class="sky-title"><span class="cloud cloud-a" aria-hidden="true"></span><h2 id="start-title">はじめかた</h2><span class="cloud cloud-b" aria-hidden="true"></span></div>
+      <div class="wrap">
+        <ol class="steps"><li><span class="step-number">01</span><div><h3>インストール</h3><p>Windows版をダウンロードし、<br>setup.exeを実行します。</p></div></li><li><span class="step-number">02</span><div><h3>サーバーを追加</h3><p>サーバーのフォルダーを選び、<br>Javaや起動設定を確認します。</p></div></li><li><span class="step-number">03</span><div><h3>起動して共有</h3><p>サーバーと公開接続を起動。<br>接続先を友達に共有しましょう。</p></div></li></ol>
+        <p class="note requirements">Windows 10/11 x64・.NET Framework 4.8が必要です。Minecraft本体・Java・MODパックは別途ご用意ください。</p>
+        <a class="manual-link" href="https://github.com/g-kari/craftharbor#readme">詳しい準備と操作方法を読む <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-title" class="faq-section">
+      <div class="grass-title"><h2 id="faq-title">よくある質問</h2></div>
+      <div class="wrap faq-list">
+        <details><summary>友達にもCraftHarborが必要？</summary><div class="answer"><p>必要ありません。友達はMinecraft Java版から接続できます。サーバーと同じMinecraftのバージョンと、必要なMOD・MODパックを用意してください。接続方法によって追加の設定が必要になる場合があります。</p></div></details>
+        <details><summary>MODパックは使える？</summary><div class="answer"><p>サーバー用パックを使った環境を管理できます。サーバー用ZIPのURLからの取り込みにも対応しています。配布形式や起動方式によって設定が必要です。すべてのパックへの互換性を保証するものではありません。</p></div></details>
+        <details><summary>アプリを閉じてもサーバーは動く？</summary><div class="answer"><p>0.3.1プレビュー版は、別プロセスのホストがサーバーと接続ツールを管理します。管理画面を閉じて、あとから開き直せます。PCの終了・スリープでは接続を維持できません。予約操作やDiscord通知など、管理画面の起動中のみ動く機能もあります。</p></div></details>
+        <details><summary>無料で使える？</summary><div class="answer"><p>CraftHarborはMITライセンスの無料・オープンソースアプリです。Minecraft本体の購入費用や、外部接続サービスの利用料金などは別途必要になる場合があります。</p></div></details>
+      </div>
+    </section>
+
+    <section id="download" class="download-section wrap" aria-labelledby="download-title"><img src="/assets/lighthouse.svg" width="48" height="60" alt="" loading="lazy"><h2 id="download-title">次のサーバーを、用意しよう。</h2><p>CraftHarbor 0.3.1-preview / Windows x64</p><a class="button" href="https://github.com/g-kari/craftharbor/releases/download/v0.3.1-preview/setup.exe">Windows版をダウンロード <span aria-hidden="true">↓</span></a><div class="download-links"><a href="https://github.com/g-kari/craftharbor/releases/tag/v0.3.1-preview">リリースノート・ポータブル版</a><a href="https://github.com/g-kari/craftharbor/issues">不具合を報告</a></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-content"><a class="brand" href="/"><img src="/assets/lighthouse.svg" width="32" height="40" alt=""><span>CraftHarbor</span></a><div><nav aria-label="フッターナビゲーション"><a href="https://github.com/g-kari/craftharbor">GitHub</a><a href="https://github.com/g-kari/craftharbor/releases">リリース</a><a href="https://github.com/g-kari/craftharbor/blob/main/LICENSE">ライセンス</a><a href="https://github.com/g-kari/craftharbor-site">サイトのソース</a></nav><p>Minecraft公式製品ではありません。MojangおよびMicrosoftとの提携はありません。</p></div></div><div class="sea" aria-hidden="true"><span></span><span></span><span></span></div></footer>
+</body>
+</html>
