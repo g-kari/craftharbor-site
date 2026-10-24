@@ -2,6 +2,8 @@
 
 CraftHarborのプロモーションサイト。承認された港のドット絵とブロック表現を使い、日本語本文の読みやすさを優先しています。
 
+公開URL: https://craftharbor.0g0.xyz/
+
 ## Local development
 
 Node.js 22以上を使用します。ランタイム依存パッケージはありません。
